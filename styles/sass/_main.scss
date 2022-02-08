@@ -1,0 +1,39 @@
+main {
+
+    .preview-container {
+
+        overflow: hidden;
+        position: relative;
+        height: 800px;
+
+        #video {
+
+            width: 1920px;
+            opacity: 0.8;
+            margin-top: 45px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .description-preview {
+
+            font-family: Verdana;
+            position: relative;
+            text-align: center;
+            float: right;
+            width: 30%;
+            background-color: rgba(0, 0, 0, 0.445);
+            height: inherit;
+            padding: 150px 50px;
+            color: white;
+
+            iframe {
+                position: relative;
+                top: 30px;
+                height: 25vw;
+                width: 30vw;
+            }
+        }
+    }
+}
