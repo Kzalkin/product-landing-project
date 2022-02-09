@@ -6,7 +6,6 @@ main {
         position: relative;
         height: 800px;
         width: 100%;
-        margin-top: 45px;
         background-image: url(https://static.wikia.nocookie.net/warframe/images/a/aa/Warframe0055.png/revision/latest/scale-to-width-down/1000?cb=20140301125131);
         background-repeat: no-repeat;
         background-size: cover;
@@ -14,6 +13,7 @@ main {
 
         #video {
             //display: none;
+            margin-top: 45px;
             width: 2000px;
             position: absolute;
             left: 50%;
@@ -27,14 +27,14 @@ main {
             text-align: center;
             float: right;
             width: 30%;
-            background-color: rgba(0, 0, 0, 0.445);
+            background-color: rgba(0, 0, 0, 0.6);
             height: inherit;
-            padding: 120px 50px;
+            padding: 6vw 5vw;
             color: white;
 
             iframe {
                 position: relative;
-                top: 30px;
+                top: 3vw;
                 height: 25vw;
                 width: 30vw;
             }
@@ -42,23 +42,26 @@ main {
     }
 
     #abilities-preview {
-        padding-bottom: 50px;
-        height: 800px;
+        padding-bottom: 5vw;
+        height: 50vw;
 
         .title {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 25px 25px 50px 25px;
+            padding: 2vw;
 
             p {
-                font-size: 20px;
+                font-size: 1.5vw;
+                padding: 0 20vw;
+                text-align: center;
             }
 
             h1 {
-                padding-top: 50px;
+                padding-top: 2vw;
                 text-align: center;
                 width: 100%;
+                font-size: 2vw;
             }
         }
 
@@ -68,28 +71,30 @@ main {
             justify-content: space-evenly;
 
             & > div {
-                width: 20%;
-                height: 450px;
+                width: 20vw;
+                height: 32vw;
                 background-color: white;
                 box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.199);
 
                 & > div {
                     width: 100%;
                     text-align: center;
-                    padding: 20px 0;
+                    padding: 1.5vw 0;
 
                     .ability-icon {
                         filter: invert(1);
-                        height: 70px;
+                        height: 4vw;
                     }
 
                     .ability-mod {
+                        height: 10vw;
                         border-radius: 100px;
                     }
                 }
             
                 p {
-                    padding: 0 20px;
+                    padding: 0 2vw;
+                    font-size: 1.2vw;
                     text-align: center;
                 }
             }
