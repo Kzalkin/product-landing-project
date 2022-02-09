@@ -123,4 +123,8 @@ main #abilities-preview .abilities > div p {
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=styles.css.map */

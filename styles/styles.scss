@@ -1,2 +1,6 @@
 @use 'sass/header';
 @use 'sass/main';
+
+html {
+    scroll-behavior: smooth;
+}
