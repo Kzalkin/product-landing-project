@@ -8,6 +8,7 @@ body {
   display: flex;
   justify-content: flex-end;
   position: fixed;
+  top: 0;
   border-bottom: 1px solid red;
   box-sizing: border-box;
   z-index: 10;
@@ -42,20 +43,24 @@ body {
   color: white;
 }
 
-main .preview-container {
+main #preview {
   overflow: hidden;
   position: relative;
   height: 800px;
-}
-main .preview-container #video {
-  width: 1920px;
-  opacity: 0.8;
+  width: 100%;
   margin-top: 45px;
+  background-image: url(https://static.wikia.nocookie.net/warframe/images/a/aa/Warframe0055.png/revision/latest/scale-to-width-down/1000?cb=20140301125131);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main #preview #video {
+  width: 2000px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
 }
-main .preview-container .description-preview {
+main #preview .description-preview {
   font-family: Verdana;
   position: relative;
   text-align: center;
@@ -63,14 +68,59 @@ main .preview-container .description-preview {
   width: 30%;
   background-color: rgba(0, 0, 0, 0.445);
   height: inherit;
-  padding: 150px 50px;
+  padding: 120px 50px;
   color: white;
 }
-main .preview-container .description-preview iframe {
+main #preview .description-preview iframe {
   position: relative;
   top: 30px;
   height: 25vw;
   width: 30vw;
+}
+main #abilities-preview {
+  padding-bottom: 50px;
+  height: 800px;
+}
+main #abilities-preview .title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 25px 50px 25px;
+}
+main #abilities-preview .title p {
+  font-size: 20px;
+}
+main #abilities-preview .title h1 {
+  padding-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+main #abilities-preview .abilities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+main #abilities-preview .abilities > div {
+  width: 20%;
+  height: 450px;
+  background-color: white;
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.199);
+}
+main #abilities-preview .abilities > div > div {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+main #abilities-preview .abilities > div > div .ability-icon {
+  filter: invert(1);
+  height: 70px;
+}
+main #abilities-preview .abilities > div > div .ability-mod {
+  border-radius: 100px;
+}
+main #abilities-preview .abilities > div p {
+  padding: 0 20px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

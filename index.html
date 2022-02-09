@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="https://n9e5v4d8.ssl.hwcdn.net/apple-touch-icon.png" type="image/icon type">
     <title>Saryn</title>
 </head>
 <body>
@@ -13,24 +14,24 @@
         <img src="videosImage/lotusIcon.jpg" alt="warframe logo" id="header-img">
 
         <nav id="nav-bar">
-            <a href="" class="nav-link">link</a>
-            <a href="" class="nav-link">link1</a>
-            <a href="" class="nav-link">link2</a>
+            <a href="#preview" class="nav-link">Saryn</a>
+            <a href="#abilities-preview" class="nav-link">Abilities</a>
+            <a href="#footer" class="nav-link">Bottom</a>
         </nav>
 
         <a href="https://www.warframe.com/" target="_blank">Play Warframe</a>
     </header>
 
     <main>
-        <div class="preview-container">
+        <div id="preview">
             <video id="video" autoplay loop muted>
                 <source src="videosImage/Saryn.webm" type="video/webm">
             </video>
             
             <div class="description-preview">
                 <h1>Saryn</h1>
-                <h3>Saryn's venomous attacks are horrifyingly effective against organic and synthetic enemies, 
-                    and her ability to "shed" her skin makes her very elusive.</h3>
+                <h4>Unleashing an endless epidemic of contagious spores, 
+                    the mistress of malady Saryn eradicates her foes through horrific decay.</h4>
                 <iframe src="https://www.youtube.com/embed/qO4ldsvVbjA" 
                     title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
@@ -39,8 +40,37 @@
         </div>
 
 
-        <section id="abilities">
-            <h1>Abilities</h1>
+        <section id="abilities-preview">
+            <div class="title">
+                <h1>Abilities</h1>
+                <p>Saryn's venomous attacks are horrifyingly effective against organic and synthetic enemies, 
+                    and her ability to "shed" her skin makes her very elusive.</p>
+            </div>
+            <div class="abilities">
+                <div>
+                    <div><img src="videosImage/VenomModU15.jpg" alt="Saryn 1" class="ability-mod"></div>
+                    <div><img src="videosImage/SarynVenom.png" alt="Saryn 1 icon" class="ability-icon"></div>
+                    <p>Inflict a target with a pox of corrosive spores. Spread spores to nearby enemies by destroying them or killing their host. 
+                        The longer the Spore spreads, its damage will increase.</p>
+                </div>
+                <div>
+                    <div><img src="videosImage/MoltModU15.jpg" alt="Saryn 2" class="ability-mod"></div>
+                    <div><img src="videosImage/SarynMoult.png" alt="Saryn 2 icon" class="ability-icon"></div>
+                    <p>Shedding her skin like a snake, Saryn leaves a decoy behind to draw fire from enemies.</p>
+                </div>
+                <div>
+                    <div><img src="videosImage/ToxicLashMod.png" alt="Saryn 3" class="ability-mod"></div>
+                    <div><img src="videosImage/SarynContagion.png" alt="Saryn 3 icon" class="ability-icon"></div>
+                    <p>While active, attacks deal additional toxin damage; this effect is doubled for melee strikes. 
+                        Instantly burst spores when attacking afflicted enemies. </p>
+                </div>
+                <div>
+                    <div><img src="videosImage/MiasmaModU15.jpg" alt="Saryn 4" class="ability-mod"></div>
+                    <div><img src="videosImage/SarynMiasma.png" alt="Saryn 4 icon" class="ability-icon"></div>
+                    <p>Releases a poisonous miasma that deals viral damage to enemies in range. 
+                        Foes afflicted by spores are more susceptible to the mist. </p>
+                </div>
+            </div>
         </section>
 
         <form action="#">
