@@ -85,7 +85,7 @@ main #abilities-preview .title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 2vw;
+  padding: 1vw 2vw 2vw 2vw;
 }
 main #abilities-preview .title p {
   font-size: 1.5vw;
@@ -129,48 +129,77 @@ main #abilities-preview .abilities > div p {
 }
 
 .footer {
-  height: 250px;
+  background-color: #f5f5eb;
+  height: 270px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  padding-top: 20px;
+}
+.footer .logo {
+  padding: 0 50px;
+  text-align: center;
 }
 .footer .logo img {
   height: 5vw;
 }
+.footer .logo p {
+  margin: 0;
+}
 .footer .links {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  width: 200px;
+  flex-direction: row;
+  padding: 0 20px;
 }
 .footer .links .socials {
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
 }
-.footer .links .socials .fa {
-  padding: 5px;
-  font-size: 10px;
-  width: 50px;
+.footer .links .socials .socials-link {
+  padding: 5px 0;
   text-decoration: none;
   color: black;
 }
 .footer .links .nav {
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
 }
 .footer .links .nav .nav-link {
-  padding: 5px;
-  font-size: 10px;
+  padding: 5px 0;
   text-decoration: none;
   color: black;
+}
+.footer .links .community {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.footer .links .community .community-link {
+  padding: 5px 0;
+  text-decoration: none;
+  color: black;
+}
+.footer .links .support {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.footer .links .support .support-link {
+  padding: 5px 0;
+  text-decoration: none;
+  color: black;
+}
+.footer #form-wrap {
+  flex: 1;
+  padding: 0 50px;
 }
 .footer #form-wrap #form {
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: inherit;
   border-radius: 20px;
   width: 35vw;
-  padding: 20px;
 }
 .footer #form-wrap #form > .form-title {
   width: 100%;
@@ -183,19 +212,31 @@ main #abilities-preview .abilities > div p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .footer #form-wrap #form .email-label {
-  padding: 5px 5px 5px 0;
+  padding-right: 3px;
 }
 .footer #form-wrap #form .email-label input[type=email] {
   width: 15vw;
-}
-.footer #form-wrap #form .text-label {
   padding: 5px;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
 }
 .footer #form-wrap #form .text-label input[type=text] {
   width: 10vw;
-}
-.footer #form-wrap #form .button-wrap {
   padding: 5px;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+}
+.footer #form-wrap #form .button-wrap button {
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  background-color: inherit;
+  padding: 5px;
+}
+.footer #form-wrap #form .button-wrap button:hover {
+  background-color: yellow;
 }
 
 html {

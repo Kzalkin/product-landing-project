@@ -1,28 +1,34 @@
 .footer {
-    height: 250px;
+    background-color:rgb(245, 245, 235);
+    height: 270px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    padding-top: 20px;
 
     .logo  {
+        padding: 0 50px;
+        text-align: center;
         img {
             height: 5vw;
-        };
+        }
+        p {
+            margin: 0;
+        }
     }
     
     
     .links {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        width: 200px;
+        flex-direction: row;
+        padding: 0 20px;
+
         .socials {
+            padding: 0 30px;
             display: flex;
             flex-direction: column;
-            .fa {
-                padding: 5px;
-                font-size: 10px;
-                width: 50px;
+
+            .socials-link {
+                padding: 5px 0;
                 text-decoration: none;
                 color:black;
             }
@@ -31,9 +37,34 @@
         .nav {
             display: flex;
             flex-direction: column;
+            padding: 0 30px;
+
             .nav-link {
-                padding: 5px;
-                font-size: 10px;
+                padding: 5px 0;
+                text-decoration: none;
+                color:black;
+            }
+        }
+
+        .community {
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px;
+
+            .community-link {
+                padding: 5px 0;
+                text-decoration: none;
+                color:black;
+            }
+        }
+
+        .support {
+            display: flex;
+            flex-direction: column;
+            padding: 0 30px;
+
+            .support-link {
+                padding: 5px 0;
                 text-decoration: none;
                 color:black;
             }
@@ -42,14 +73,14 @@
 
 
     #form-wrap {
-    
+        flex: 1;
+        padding: 0 50px;
         #form {
             display: flex;
             flex-wrap: wrap;
-            background-color: white;
+            background-color: inherit;
             border-radius: 20px;
             width: 35vw;
-            padding: 20px;
         
             &>.form-title {
                 width: 100%;
@@ -64,23 +95,40 @@
             }
         
             .email-label {
-                padding: 5px 5px 5px 0;
-    
+                padding-right: 3px;
                 input[type="email"] {
                     width: 15vw;
+                    padding: 5px;
+                    border-color: white;
+                    border-width: 3px;
+                    border-style: solid;
                 }
             }
     
             .text-label {
-                padding: 5px;
     
                 input[type="text"] {
                     width: 10vw;
+                    padding: 5px;
+                    border-color: white;
+                    border-width: 3px;
+                    border-style: solid;
                 }
             }
     
             .button-wrap {
-                padding: 5px;
+
+                button {
+                    border-color: white;
+                    border-width: 3px;
+                    border-style: solid;
+                    background-color: inherit;
+                    padding: 5px;
+
+                    &:hover {
+                        background-color: yellow;
+                    }
+                }
             }
         }
     
