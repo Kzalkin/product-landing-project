@@ -1,0 +1,17 @@
+@mixin footer-links-container {
+    display: flex;
+    padding: 0 30px;
+    flex-direction: column;
+}
+
+@mixin footer-links {
+    padding: 5px 0;
+    text-decoration: none;
+    color: black;
+}
+
+@mixin input-button-border {
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}

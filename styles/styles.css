@@ -134,6 +134,7 @@ main #abilities-preview .abilities > div p {
   width: 100%;
   display: flex;
   padding-top: 20px;
+  border-top: 1px red solid;
 }
 .footer .logo {
   padding: 0 50px;
@@ -151,8 +152,8 @@ main #abilities-preview .abilities > div p {
   padding: 0 20px;
 }
 .footer .links .socials {
-  padding: 0 30px;
   display: flex;
+  padding: 0 30px;
   flex-direction: column;
 }
 .footer .links .socials .socials-link {
@@ -162,8 +163,8 @@ main #abilities-preview .abilities > div p {
 }
 .footer .links .nav {
   display: flex;
-  flex-direction: column;
   padding: 0 30px;
+  flex-direction: column;
 }
 .footer .links .nav .nav-link {
   padding: 5px 0;
@@ -172,8 +173,8 @@ main #abilities-preview .abilities > div p {
 }
 .footer .links .community {
   display: flex;
-  flex-direction: column;
   padding: 0 30px;
+  flex-direction: column;
 }
 .footer .links .community .community-link {
   padding: 5px 0;
@@ -182,8 +183,8 @@ main #abilities-preview .abilities > div p {
 }
 .footer .links .support {
   display: flex;
-  flex-direction: column;
   padding: 0 30px;
+  flex-direction: column;
 }
 .footer .links .support .support-link {
   padding: 5px 0;
@@ -236,7 +237,8 @@ main #abilities-preview .abilities > div p {
   padding: 5px;
 }
 .footer #form-wrap #form .button-wrap button:hover {
-  background-color: yellow;
+  background-color: red;
+  cursor: pointer;
 }
 
 html {

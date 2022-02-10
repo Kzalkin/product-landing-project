@@ -1,9 +1,11 @@
+@use '../mixins/mixin' as m;
 .footer {
     background-color:rgb(245, 245, 235);
     height: 270px;
     width: 100%;
     display: flex;
     padding-top: 20px;
+    border-top: 1px red solid;
 
     .logo  {
         padding: 0 50px;
@@ -23,50 +25,34 @@
         padding: 0 20px;
 
         .socials {
-            padding: 0 30px;
-            display: flex;
-            flex-direction: column;
+            @include m.footer-links-container;
 
             .socials-link {
-                padding: 5px 0;
-                text-decoration: none;
-                color:black;
+                @include m.footer-links;
             }
         }
 
         .nav {
-            display: flex;
-            flex-direction: column;
-            padding: 0 30px;
+            @include m.footer-links-container;
 
             .nav-link {
-                padding: 5px 0;
-                text-decoration: none;
-                color:black;
+                @include m.footer-links;
             }
         }
 
         .community {
-            display: flex;
-            flex-direction: column;
-            padding: 0 30px;
+            @include m.footer-links-container;
 
             .community-link {
-                padding: 5px 0;
-                text-decoration: none;
-                color:black;
+                @include m.footer-links;
             }
         }
 
         .support {
-            display: flex;
-            flex-direction: column;
-            padding: 0 30px;
+            @include m.footer-links-container;
 
             .support-link {
-                padding: 5px 0;
-                text-decoration: none;
-                color:black;
+                @include m.footer-links;
             }
         }
     }
@@ -99,9 +85,7 @@
                 input[type="email"] {
                     width: 15vw;
                     padding: 5px;
-                    border-color: white;
-                    border-width: 3px;
-                    border-style: solid;
+                   @include m.input-button-border;
                 }
             }
     
@@ -110,23 +94,20 @@
                 input[type="text"] {
                     width: 10vw;
                     padding: 5px;
-                    border-color: white;
-                    border-width: 3px;
-                    border-style: solid;
+                    @include m.input-button-border;
                 }
             }
     
             .button-wrap {
 
                 button {
-                    border-color: white;
-                    border-width: 3px;
-                    border-style: solid;
+                    @include m.input-button-border;
                     background-color: inherit;
                     padding: 5px;
 
                     &:hover {
-                        background-color: yellow;
+                        background-color: red;
+                        cursor: pointer;
                     }
                 }
             }
