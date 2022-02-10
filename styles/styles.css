@@ -53,7 +53,7 @@ main #preview {
   background-size: cover;
   background-position: center;
 }
-main #preview #video {
+main #preview .video {
   margin-top: 45px;
   width: 2000px;
   position: absolute;
@@ -128,48 +128,73 @@ main #abilities-preview .abilities > div p {
   text-align: center;
 }
 
-.form-wrap {
+.footer {
+  height: 250px;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vw;
-  background-image: url(https://d1lss44hh2trtw.cloudfront.net/assets/article/2019/07/18/how-to-create-a-clan-and-invite-others-in-warframe-hero_feature.jpg);
-  background-size: cover;
+  justify-content: space-around;
 }
-.form-wrap #form {
+.footer .logo img {
+  height: 5vw;
+}
+.footer .links {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 200px;
+}
+.footer .links .socials {
+  display: flex;
+  flex-direction: column;
+}
+.footer .links .socials .fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 50px;
+  text-decoration: none;
+  color: black;
+}
+.footer .links .nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer .links .nav .nav-link {
+  padding: 5px;
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
+}
+.footer #form-wrap #form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   background-color: white;
   border-radius: 20px;
   width: 35vw;
   padding: 20px;
 }
-.form-wrap #form > .form-title {
+.footer #form-wrap #form > .form-title {
   width: 100%;
-  text-align: center;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.form-wrap #form > .form-description {
+.footer #form-wrap #form > .form-description {
   width: 100%;
-  text-align: center;
   font-size: 1vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.form-wrap #form .email-label {
-  padding: 5px;
+.footer #form-wrap #form .email-label {
+  padding: 5px 5px 5px 0;
 }
-.form-wrap #form .email-label input[type=email] {
+.footer #form-wrap #form .email-label input[type=email] {
   width: 15vw;
 }
-.form-wrap #form .number-label {
+.footer #form-wrap #form .text-label {
   padding: 5px;
 }
-.form-wrap #form .number-label input[type=number] {
+.footer #form-wrap #form .text-label input[type=text] {
   width: 10vw;
 }
-.form-wrap #form .button-wrap {
+.footer #form-wrap #form .button-wrap {
   padding: 5px;
 }
 

@@ -1,0 +1,88 @@
+.footer {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .logo  {
+        img {
+            height: 5vw;
+        };
+    }
+    
+    
+    .links {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 200px;
+        .socials {
+            display: flex;
+            flex-direction: column;
+            .fa {
+                padding: 5px;
+                font-size: 10px;
+                width: 50px;
+                text-decoration: none;
+                color:black;
+            }
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            .nav-link {
+                padding: 5px;
+                font-size: 10px;
+                text-decoration: none;
+                color:black;
+            }
+        }
+    }
+
+
+    #form-wrap {
+    
+        #form {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            border-radius: 20px;
+            width: 35vw;
+            padding: 20px;
+        
+            &>.form-title {
+                width: 100%;
+                font-size: 1.5vw;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        
+            &>.form-description {
+                width: 100%;
+                font-size: 1vw;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        
+            .email-label {
+                padding: 5px 5px 5px 0;
+    
+                input[type="email"] {
+                    width: 15vw;
+                }
+            }
+    
+            .text-label {
+                padding: 5px;
+    
+                input[type="text"] {
+                    width: 10vw;
+                }
+            }
+    
+            .button-wrap {
+                padding: 5px;
+            }
+        }
+    
+    }
+}

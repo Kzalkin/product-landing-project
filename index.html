@@ -16,7 +16,7 @@
         <nav id="nav-bar">
             <a href="#preview" class="nav-link">Saryn</a>
             <a href="#abilities-preview" class="nav-link">Abilities</a>
-            <a href="#form" class="nav-link">Clan</a>
+            <a href="#form-wrap" class="nav-link">Clan</a>
         </nav>
 
         <a href="https://www.warframe.com/" target="_blank">Play Warframe</a>
@@ -24,7 +24,7 @@
 
     <main>
         <div id="preview">
-            <video id="video" autoplay loop muted>
+            <video class="video" autoplay loop muted>
                 <source src="videosImage/Saryn.webm" type="video/webm">
             </video>
             
@@ -32,7 +32,7 @@
                 <h1>Saryn</h1>
                 <h4>Unleashing an endless epidemic of contagious spores, 
                     the mistress of malady Saryn eradicates her foes through horrific decay.</h4>
-                <iframe src="https://www.youtube.com/embed/qO4ldsvVbjA" 
+                <iframe id="video" src="https://www.youtube.com/embed/qO4ldsvVbjA" 
                     title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                     gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -72,26 +72,65 @@
                 </div>
             </div>
         </section>
-
-        <div class="form-wrap">
+    <!--
+        <div id="form-wrap">
             <form action="#" method="get" id="form">
                 <h1 class="form-title">Need a clan?</h1>
                 <p class="form-description">Send us your email and steam friend code to be part of our clan!</p>
                 <label for="email" class="email-label">
-                    <input type="email" name="email"placeholder="Email" id="email">
+                    <input type="email" name="email" placeholder="Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email">
                 </label>
-                <label for="number" class="number-label">
-                    <input type="number" name="Steam-Code" placeholder="Steam Friend Code" id="number">
+                <label for="text" class="text-label">
+                    <input type="text" name="ign" placeholder="Warframe IGN" id="text">
                 </label>
                 <div class="button-wrap">
                     <button type="submit">Recruit Me!</button>
                 </div>
             </form>
         </div>
+    -->
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="logo">
+            <img src="https://logos-world.net/wp-content/uploads/2021/02/Warframe-Logo.png" alt="Warframe-Logo">
+            <p>Ninjas Play Free</p>
+        </div>
+        <div class="links">
+            <div class="socials">
+                <p>Follow</p>
+                <a href="https://www.facebook.com/PlayWarframe/" class="fa fa-facebook" target="_blank">Facebook</a>
+                <a href="https://twitter.com/playwarframe" class="fa fa-twitter" target="_blank">Twitter</a>
+                <a href="https://www.youtube.com/user/playwarframe" class="fa fa-youtube-play" target="_blank">YouTube</a>
+                <a href="https://www.instagram.com/playwarframe/" class="fa fa-instagram" target="_blank">Instagram</a>
+                <a href="https://www.twitch.tv/warframe" class="fa fa-twitch" target="_blank">Twitch</a>
+                <a href="https://www.reddit.com/r/warframe" class="fa fa-reddit" target="_blank">Reddit</a>
+                <a href="https://store.steampowered.com/app/230410/Warframe/" class="fa fa-steam" target="_blank">Steam</a>
+            </div>
+            <div class="nav">
+                <p>Explore</p>
+                <a href="#preview" class="nav-link">Saryn</a>
+                <a href="#abilities-preview" class="nav-link">Abilities</a>
+                <a href="#form-wrap" class="nav-link">Clan</a>
+            </div>
+        </div>
+        
+        <div id="form-wrap">
+            <form action="#" method="get" id="form">
+                <h1 class="form-title">Need a clan?</h1>
+                <p class="form-description">Send us your email and steam friend code to be part of our clan!</p>
+                <label for="email" class="email-label">
+                    <input type="email" name="email" placeholder="Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email">
+                </label>
+                <label for="text" class="text-label">
+                    <input type="text" name="ign" placeholder="Warframe IGN" id="text">
+                </label>
+                <div class="button-wrap">
+                    <button type="submit">Recruit Me!</button>
+                </div>
+            </form>
+        </div>
+        
     </footer>
 </body>
 </html>
