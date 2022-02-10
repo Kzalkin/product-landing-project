@@ -43,6 +43,30 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 540px) {
+  #header {
+    justify-content: space-between;
+    background-color: white;
+  }
+  #header .burger-menu {
+    width: 50px;
+    background-color: white;
+    padding: 10px;
+  }
+  #header .burger-menu .patty {
+    height: 4px;
+    margin-top: 3px;
+    width: 20px;
+    background-color: black;
+  }
+  #header #nav-bar {
+    display: none;
+  }
+  #header a {
+    padding: 5px 0 0 0;
+    width: 80px;
+  }
+}
 main #preview {
   overflow: hidden;
   position: relative;
@@ -122,13 +146,58 @@ main #abilities-preview .abilities > div > div .ability-mod {
   height: 10vw;
   border-radius: 100px;
 }
-main #abilities-preview .abilities > div p {
+main #abilities-preview .abilities > div .ability-description {
   padding: 0 2vw;
   font-size: 1.2vw;
   text-align: center;
 }
 
-.footer {
+@media screen and (max-width: 540px) {
+  main #preview {
+    height: 900px;
+  }
+  main #preview .video {
+    left: 85%;
+  }
+  main #preview .description-preview {
+    width: auto;
+    height: 200px;
+    top: 500px;
+  }
+  main #preview #video {
+    display: none;
+  }
+  main #abilities-preview {
+    padding-top: 45px;
+    height: 1300px;
+  }
+  main #abilities-preview .title h1 {
+    font-size: 16px;
+  }
+  main #abilities-preview .title p {
+    display: none;
+  }
+  main #abilities-preview .abilities {
+    flex-direction: column;
+    align-items: center;
+    height: 1200px;
+  }
+  main #abilities-preview .abilities > div {
+    height: 250px;
+    width: 250px;
+    padding-top: 25px;
+  }
+  main #abilities-preview .abilities > div > div .ability-mod {
+    display: none;
+  }
+  main #abilities-preview .abilities > div > div .ability-icon {
+    height: 50px;
+  }
+  main #abilities-preview .abilities > div .ability-description {
+    font-size: 16px;
+  }
+}
+#footer {
   background-color: #f5f5eb;
   height: 270px;
   width: 100%;
@@ -136,111 +205,168 @@ main #abilities-preview .abilities > div p {
   padding-top: 20px;
   border-top: 1px red solid;
 }
-.footer .logo {
+#footer .logo {
   padding: 0 50px;
   text-align: center;
 }
-.footer .logo img {
+#footer .logo img {
   height: 5vw;
 }
-.footer .logo p {
+#footer .logo p {
   margin: 0;
+  font-size: 1vw;
 }
-.footer .links {
+#footer .links {
   display: flex;
   flex-direction: row;
   padding: 0 20px;
 }
-.footer .links .socials {
+#footer .links .socials {
   display: flex;
-  padding: 0 30px;
+  padding: 0 25px;
   flex-direction: column;
 }
-.footer .links .socials .socials-link {
+#footer .links .socials .socials-link {
   padding: 5px 0;
   text-decoration: none;
   color: black;
 }
-.footer .links .nav {
+#footer .links .nav {
   display: flex;
-  padding: 0 30px;
+  padding: 0 25px;
   flex-direction: column;
 }
-.footer .links .nav .nav-link {
+#footer .links .nav .nav-link {
   padding: 5px 0;
   text-decoration: none;
   color: black;
 }
-.footer .links .community {
+#footer .links .community {
   display: flex;
-  padding: 0 30px;
+  padding: 0 25px;
   flex-direction: column;
 }
-.footer .links .community .community-link {
+#footer .links .community .community-link {
   padding: 5px 0;
   text-decoration: none;
   color: black;
 }
-.footer .links .support {
+#footer .links .support {
   display: flex;
-  padding: 0 30px;
+  padding: 0 25px;
   flex-direction: column;
 }
-.footer .links .support .support-link {
+#footer .links .support .support-link {
   padding: 5px 0;
   text-decoration: none;
   color: black;
 }
-.footer #form-wrap {
-  flex: 1;
+#footer #form-wrap {
   padding: 0 50px;
 }
-.footer #form-wrap #form {
+#footer #form-wrap #form {
   display: flex;
   flex-wrap: wrap;
   background-color: inherit;
   border-radius: 20px;
   width: 35vw;
 }
-.footer #form-wrap #form > .form-title {
+#footer #form-wrap #form > .form-title {
   width: 100%;
   font-size: 1.5vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.footer #form-wrap #form > .form-description {
+#footer #form-wrap #form > .form-description {
   width: 100%;
   font-size: 1vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.footer #form-wrap #form .email-label {
+#footer #form-wrap #form .email-label {
   padding-right: 3px;
 }
-.footer #form-wrap #form .email-label input[type=email] {
+#footer #form-wrap #form .email-label input[type=email] {
   width: 15vw;
   padding: 5px;
   border-color: white;
   border-width: 3px;
   border-style: solid;
 }
-.footer #form-wrap #form .text-label input[type=text] {
+#footer #form-wrap #form .text-label input[type=text] {
   width: 10vw;
   padding: 5px;
   border-color: white;
   border-width: 3px;
   border-style: solid;
 }
-.footer #form-wrap #form .button-wrap button {
+#footer #form-wrap #form .button-wrap button {
   border-color: white;
   border-width: 3px;
   border-style: solid;
   background-color: inherit;
   padding: 5px;
 }
-.footer #form-wrap #form .button-wrap button:hover {
+#footer #form-wrap #form .button-wrap button:hover {
   background-color: red;
   cursor: pointer;
 }
 
+@media screen and (max-width: 540px) {
+  #footer {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 45px;
+    height: 1240px;
+  }
+  #footer .logo {
+    display: none;
+  }
+  #footer .links {
+    padding: 20px 0 0 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 930px;
+  }
+  #footer .links .nav, #footer .links .socials, #footer .links .community, #footer .links .support {
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+  }
+  #footer .links .nav .nav-link, #footer .links .nav .socials-link,
+#footer .links .nav .community-link, #footer .links .nav .support-link, #footer .links .socials .nav-link, #footer .links .socials .socials-link,
+#footer .links .socials .community-link, #footer .links .socials .support-link, #footer .links .community .nav-link, #footer .links .community .socials-link,
+#footer .links .community .community-link, #footer .links .community .support-link, #footer .links .support .nav-link, #footer .links .support .socials-link,
+#footer .links .support .community-link, #footer .links .support .support-link {
+    padding: 10px 0;
+    text-align: center;
+  }
+  #footer #form-wrap {
+    padding: 0;
+  }
+  #footer #form-wrap #form {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  #footer #form-wrap #form .form-title, #footer #form-wrap #form .form-description {
+    font-size: 16px;
+    text-align: center;
+  }
+  #footer #form-wrap #form .email-label {
+    padding: 10px 0;
+  }
+  #footer #form-wrap #form .email-label #email {
+    width: 285px;
+  }
+  #footer #form-wrap #form .text-label {
+    padding: 0 0 10px 0;
+  }
+  #footer #form-wrap #form .text-label #text {
+    width: 285px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
