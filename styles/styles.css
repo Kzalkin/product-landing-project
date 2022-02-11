@@ -121,10 +121,10 @@ main #preview .description-preview {
   width: 30%;
   background-color: rgba(0, 0, 0, 0.6);
   height: inherit;
-  padding: 6vw 5vw;
+  padding: 8vw 5vw;
   color: white;
 }
-main #preview .description-preview iframe {
+main #preview .description-preview #video {
   position: relative;
   top: 3vw;
   height: 25vw;
@@ -264,6 +264,9 @@ main #abilities-preview .abilities > div .ability-description {
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
+  main #preview .description-preview {
+    margin-top: 80px;
+  }
   main #abilities-preview {
     height: 800px;
   }
@@ -287,6 +290,9 @@ main #abilities-preview .abilities > div .ability-description {
   }
 }
 @media screen and (min-width: 915px) and (max-width: 1024px) {
+  main #preview {
+    height: 600px;
+  }
   main #abilities-preview {
     height: 800px;
   }
@@ -307,6 +313,12 @@ main #abilities-preview .abilities > div .ability-description {
   }
   main #abilities-preview .abilities > div .ability-description {
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 541px) and (max-width: 914px) {
+  main #preview .description-preview {
+    padding-top: 180px;
+    margin: 0;
   }
 }
 #footer {

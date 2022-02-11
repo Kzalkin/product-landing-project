@@ -27,10 +27,10 @@ main {
             width: 30%;
             background-color: rgba(0, 0, 0, 0.6);
             height: inherit;
-            padding: 6vw 5vw;
+            padding: 8vw 5vw;
             color: white;
 
-            iframe {
+            #video {
                 position: relative;
                 top: 3vw;
                 height: 25vw;
@@ -217,6 +217,12 @@ main {
 @media screen and (min-width:1025px) and (max-width:1280px) {
     main {
 
+        #preview {
+            .description-preview {
+                margin-top: 80px;
+            }
+        }
+
         #abilities-preview {
             height: 800px;
 
@@ -256,6 +262,10 @@ main {
 @media screen and (min-width:915px) and (max-width:1024px) {
     main {
 
+        #preview {
+            height: 600px;
+        }
+
         #abilities-preview {
             height: 800px;
 
@@ -287,6 +297,18 @@ main {
                         font-size: 20px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:541px) and (max-width:914px) {
+    main {
+
+        #preview {
+            .description-preview {
+                padding-top: 180px;
+                margin: 0;
             }
         }
     }
