@@ -130,14 +130,14 @@
         </div>
         
         <div id="form-wrap">
-            <form action="#" method="get" id="form">
+            <form action="http://127.0.0.1:5501/index.html" method="get" id="form">
                 <h1 class="form-title">Need a clan?</h1>
                 <p class="form-description">Send us your email and ign to be part of our clan!</p>
                 <label for="email" class="email-label">
-                    <input type="email" name="email" placeholder="Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email">
+                    <input type="email" name="email" placeholder="Email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email" required>
                 </label>
                 <label for="text" class="text-label">
-                    <input type="text" name="ign" placeholder="Warframe IGN" id="text">
+                    <input type="text" name="ign" placeholder="Warframe IGN" id="text" required>
                 </label>
                 <div class="button-wrap">
                     <button type="submit">Recruit Me!</button>
